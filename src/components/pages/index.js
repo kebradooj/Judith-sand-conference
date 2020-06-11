@@ -10,7 +10,7 @@ const Home = () => {
         <Navbar />
         <div className="container">
           <h1 className="display-5 text-uppercase py-5 text-center">
-            Welcome to the some Conference
+            Welcome to Judith Sand Conference
           </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at
