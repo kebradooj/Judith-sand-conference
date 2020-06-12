@@ -80,7 +80,7 @@ export default Footer
 const FooterContainer = styled.footer`
   background: var(--light-green);
   position: relative;
-  bottom: 0 !important;
+  bottom: 0!important;
   width: 100%;
   ul li {
     list-style: none;

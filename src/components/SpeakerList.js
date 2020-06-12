@@ -8,6 +8,8 @@ import avatar1 from "../avatars/avatar1.png";
 import avatar2 from "../avatars/avatar2.png";
 import avatar3 from "../avatars/avatar3.png";
 import avatar4 from "../avatars/avatar4.png";
+//BG
+import SpeakersBG from "../bg/speakers.jpg";
 
 const SpeakerList = () => {
   return (
@@ -28,7 +30,7 @@ const SpeakerList = () => {
                 asperiores adipisci nulla atque in ducimus eligendi velit,
                 officiis dignissimos.
               </p>
-              <Link to="/">
+              <Link to="/speaker/info/0">
                 <Button className="btn btn-primary text-uppercase">
                   More info about speaker
                 </Button>
@@ -49,7 +51,7 @@ const SpeakerList = () => {
                 asperiores adipisci nulla atque in ducimus eligendi velit,
                 officiis dignissimos.
               </p>
-              <Link to="/">
+              <Link to="/speaker/info/1">
                 <Button className="btn btn-primary text-uppercase">
                   More info about speaker
                 </Button>
@@ -72,7 +74,7 @@ const SpeakerList = () => {
                 asperiores adipisci nulla atque in ducimus eligendi velit,
                 officiis dignissimos.
               </p>
-              <Link to="/">
+              <Link to="/speaker/info/2">
                 <Button className="btn btn-primary text-uppercase">
                   More info about speaker
                 </Button>
@@ -93,7 +95,7 @@ const SpeakerList = () => {
                 asperiores adipisci nulla atque in ducimus eligendi velit,
                 officiis dignissimos.
               </p>
-              <Link to="/">
+              <Link to="/speaker/info/3">
                 <Button className="btn btn-primary text-uppercase">
                   More info about speaker
                 </Button>
@@ -102,6 +104,7 @@ const SpeakerList = () => {
           </div>
         </div>
       </div>
+      
     </MainContainer>
   );
 };
@@ -111,5 +114,33 @@ export default SpeakerList;
 //styled component
 
 const MainContainer = styled.div`
-  background: url(./bg/speakers.jpg)
+  background: url(${SpeakersBG});
+  .card-img-top {
+    width: 10rem;
+  }
+
+  .card {
+    margin: 1rem !important;
+    background: rgba(255,255,255,.4);
+    border: none;
+    border-radius: 0;
+  }
+
+  h3 {
+    color: var(--main-color)
+  }
+
+  h5 {
+    color: var(--main-color)
+  }
+
+  p {
+    color: var(--main-color)
+  }
+
+  @media (min-width: 768px){
+    .col-md-6 {
+      max-width: 40% !important;
+    }
+  }
 `;
