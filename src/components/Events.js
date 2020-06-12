@@ -36,6 +36,8 @@ const Events = () => {
         >
           Unreal Engine 4
         </NavLink>
+        {/* Routes */}
+        <Redirect to="/events/node-js"/>
         <Route
           path="/events/node-js"
           render={() => <NodeJS data={eventsData} />}
@@ -63,14 +65,22 @@ export default Events;
 const MainContainer  = styled.div`
 
   background: url(${eventsBG}) no-repeat center/cover;
-  height: 110vh;
+  height: 80vh;
   width: 100%;
   h2 {
     color: var(--main-color);
   }
 
   p {
-    color: var(--light-pink)
+    color: var(--main-color)
+  }
+
+  .active {
+    background: var(--light-pink);
+    transition: .9s ease;
+    &:focus {
+      background: var(--deep-grey);
+    }
   }
 
 `;

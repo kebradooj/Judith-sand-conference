@@ -3,7 +3,11 @@ import React from "react";
 const NodeJS = ({ data }) => {
   return (
     <div className="container py-5">
-      <img src={data.events[0].nodejs.image} alt="" />
+      <img
+        src={data.events[0].nodejs.image}
+        alt=""
+        style={{ width: "9.125rem" }}
+      />
       <h2>{data.events[0].nodejs.title}</h2>
       <p>{data.events[0].nodejs.description}</p>
     </div>
