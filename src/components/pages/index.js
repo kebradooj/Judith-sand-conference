@@ -1,13 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "../layouts/Navbar";
-import Footer from "../layouts/Footer";
+import {Button} from "../Button"
 
 const Home = () => {
   return (
     <>
       <MainContainer className="home-main-container">
-        <Navbar />
         <div className="container">
           <h1 className="display-5 text-uppercase py-5 text-center">
             Welcome to Judith Sand Conference
@@ -56,14 +54,13 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <button className="btn btn-info text-uppercase">
+              <Button className="btn btn-info text-uppercase">
                 reserve your seat
-              </button>
+              </Button>
             </form>
           </div>
         </div>
       </MainContainer>
-      <Footer />
     </>
   );
 };
@@ -72,6 +69,8 @@ export default Home;
 
 // Styled components styles
 const MainContainer = styled.div`
+  heigh: 100vh;
+
   h1 {
     color: var(--light-orange);
   }
@@ -90,20 +89,6 @@ const MainContainer = styled.div`
   form {
     width: 50rem;
     margin: 0 auto;
-  }
-
-  button {
-    width: 100%;
-    background: transparent;
-    border-color: var(--light-orange);
-    &:hover{
-      background: var(--deep-pink);
-      border-color: var(--light-pink)
-    }
-    &:focus {
-      background: var(--light-orange);
-      border-color: var(--light-orange)
-    }
   }
 
   input {

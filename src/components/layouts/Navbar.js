@@ -24,8 +24,8 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <NavLink className="nav-link" to="/">
+            <li className="nav-item">
+              <NavLink className="nav-link" exact to="/">
                 Home 
               </NavLink>
             </li>
@@ -76,4 +76,17 @@ const MainContainer = styled.div`
   .active {
     background: var(--light-pink)
   }
+
+  @media (max-width: 760px) {
+    form {
+      width: 100%
+    }
+  }
+  @media (min-width: 760px) {
+    form {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
 `;

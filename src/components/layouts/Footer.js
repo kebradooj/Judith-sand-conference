@@ -5,7 +5,7 @@ import styled from "styled-components"
 const Footer = () => {
   return (
     <FooterContainer>
-      <div className="container-fluid">
+      <div className="container-fluid ">
         <div className="row pt-5">
           {/* Column 4 */}
           <div className="col-sm-3 col-xs-12 d-flex">
@@ -79,7 +79,9 @@ export default Footer
 //Styled component styles 
 const FooterContainer = styled.footer`
   background: var(--light-green);
-
+  position: relative;
+  bottom: 0 !important;
+  width: 100%;
   ul li {
     list-style: none;
   }

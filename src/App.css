@@ -24,5 +24,6 @@ body {
 }
 
 .home-main-container {
-  background: url("./main-bg.jpg") no-repeat center/cover;
+  background: url("./bg/main-bg.jpg") no-repeat center/cover;
 }
+
