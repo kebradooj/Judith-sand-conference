@@ -114,7 +114,7 @@ export default SpeakerList;
 //styled component
 
 const MainContainer = styled.div`
-  background: url(${SpeakersBG});
+  background: url(${SpeakersBG}) no-repeat center/cover;
   .card-img-top {
     width: 10rem;
   }

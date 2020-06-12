@@ -8,6 +8,7 @@ import SpeakersList from "./components/SpeakerList";
 import Navbar from "./components/layouts/Navbar";
 import Footer from "./components/layouts/Footer";
 import SpeakerInfo from "./components/SpeakerInfo";
+import Events from "./components/Events"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/speakers" component={SpeakersList} />
         <Route path="/speaker/info/:id" children={<SpeakerInfo/>}/>
+        <Route path="/events" component={Events} />
       </Switch>
       <Footer />
     </>
