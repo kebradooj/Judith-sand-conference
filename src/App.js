@@ -10,6 +10,7 @@ import Footer from "./components/layouts/Footer";
 import SpeakerInfo from "./components/SpeakerInfo";
 import Events from "./components/Events"
 import About from "./components/About"
+import NotFoundPage from "./components/NotFoundPage"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/speaker/info/:id" children={<SpeakerInfo/>}/>
         <Route path="/events" component={Events} />
         <Route path="/about" component={About} />
+        <Route component={NotFoundPage} />
       </Switch>
       <Footer />
     </>
