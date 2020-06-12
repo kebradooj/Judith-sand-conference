@@ -63,9 +63,8 @@ export default Events;
 const MainContainer  = styled.div`
 
   background: url(${eventsBG}) no-repeat center/cover;
-  
-  height: 100%;
-
+  height: 110vh;
+  width: 100%;
   h2 {
     color: var(--main-color);
   }
