@@ -7,7 +7,7 @@ const NotFoundPage = () => {
       className="container py-5 d-flex justify-content-center align-items-center"
       style={{ height: "78vh" }}
     >
-      <h3>Sorry, We can't find what you looking for--__-- <br/>Maby you forgot something really right think?So remember it! <br/>Faster i'll wait you here</h3>
+      <h3>Sorry, We can't find what you looking for--__-- <br/>Maby you forgot something really right think?<br/> So remember it! <br/>Faster i'll wait you here</h3>
       <img
         src={NotFoundIMG}
         alt="404"
